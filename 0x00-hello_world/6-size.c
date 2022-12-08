@@ -8,19 +8,19 @@
 int main(void)
 {
 
-	char character;
-	int integer;
+	char acharacter;
+	int ainteger;
 	long along;
 
-	long long 2long;
+	long long alonglong;
 
-	float float1;
+	float afloat;
 
-	printf("Size of a char: %lu bytes\n", sizeof(character));
-	printf("Size of an int: %lu bytes\n", sizeof(integer));
+	printf("Size of a char: %lu byte(s)\n", sizeof(acharacter));
+	printf("Size of an int: %lu byte(s)\n", sizeof(ainteger));
 	printf("Size of a long int: %lu byte(s)\n", sizeof(along));
-	printf("Size of a long long int: %lu bytes\n", sizeof(2long));
-	printf("Size of a float: %lu bytes\n", sizeof(float1));
+	printf("Size of a long long int: %lu byte(s)\n", sizeof(alonglong));
+	printf("Size of a float: %lu byte(s)\n", sizeof(afloat));
 
 	return (0);
 }
