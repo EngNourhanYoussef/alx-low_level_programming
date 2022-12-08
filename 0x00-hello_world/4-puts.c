@@ -1,13 +1,10 @@
 #include <stdio.h>
-
 /**
-  * Main - Entry poin
-  *
-  * Retern: Return(0)
+  * main - Write '"Programming is like building a multilingual puzzle'
+  *Return: Always 0 (success)
   */
 int main(void)
 {
-	char str[] = "\"Programming is like building a multilingual puzzle";
-	puts(str);
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
