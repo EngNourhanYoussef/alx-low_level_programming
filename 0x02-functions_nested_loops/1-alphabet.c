@@ -14,5 +14,5 @@ void print_alphabet(void)
 	{
 		_putchar(la);
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
