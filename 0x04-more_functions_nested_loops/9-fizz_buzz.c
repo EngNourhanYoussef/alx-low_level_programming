@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
   * main - Prints a Fizz Buzz program
@@ -9,7 +8,7 @@ int main(void)
 {
 	int i;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0)
 		{
@@ -19,13 +18,13 @@ int main(void)
 		{
 			printf("Buzz");
 		}
-		else if ((i % 3 == 0) && (i % 5 == 0))
+		else if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz");
 		}
 		else
 		{
-			printf("%d", x);
+			printf("%d", i);
 		}
 		if (i != 100)
 		{
