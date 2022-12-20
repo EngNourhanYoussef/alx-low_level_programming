@@ -19,7 +19,7 @@ void rev_string(char *s)
 	inx--;
 	while (inx >= 0)
 	{
-		s[inx] = arr[inx];
+		s[inx] = arr[len];
 		inx--;
 		len++;
 	}
