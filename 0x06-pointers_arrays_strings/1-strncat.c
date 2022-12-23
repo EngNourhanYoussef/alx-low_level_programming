@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 /**
   * _strncat - concatenates two strings
   * @dest:char dest
@@ -17,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		x++;
 	}
-	while (src[y] != '\0' && y<n)
+	while (src[y] != '\0' && y < n)
 	{
 		dest[x] = src[y];
 		x++;
