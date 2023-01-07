@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+<<<<<<< HEAD
   * _atoi - convert to a int
   * @s:string
   * Return:int
@@ -8,6 +9,16 @@
 int _atoi(char *s)
 {
 	int i, j, n, x;
+=======
+ * _atoi - convert to a int
+ * @s:string
+ * Return:int
+ */
+
+int _atoi(char *s)
+{
+int i, j, n, x;
+>>>>>>> c1c8614277faa82e3a0fcc2a8f8c54665da8ec22
 
 	i = n = 0;
 	x = 1;
