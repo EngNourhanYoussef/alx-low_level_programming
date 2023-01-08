@@ -4,6 +4,7 @@
   * main - entry point
   * @argc:int
   * @argv:string
+  * Return:inti
   */
 int main(int argc, char *argv[])
 {
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
 		x = atoi(argv[1]);
 		y = atoi(argv[2]);
 		z = x * y;
-		printf("%d\n", x);
+		printf("%d\n", z);
 	}
 	return (0);
 }
