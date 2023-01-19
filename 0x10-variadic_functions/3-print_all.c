@@ -68,7 +68,7 @@ void print_all(const char * const format, ...)
 	int x = 0, y = 0;
 	char *separator = "";
 
-	printer_t p[] = {
+	printer_t funcs[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
@@ -77,18 +77,19 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	while (format && (*(format + x)))
 	{
-		while (y < 4 && (*(format + x) != *(p[y].symbol)))
+		y = 0;
+		while (y < 4 && (*(format + x) != *(funcs[y].symbol)))
 		{
 			y++;
 		}
 		if (y < 4)
 		{
 			printf("%s", separator);
-			p[y].print(args);
+			funcs[y].print(args);
 			separator = ", ";
 		}
 		x++;
 	}
-	print("\n");
+	printf("\n");
 	va_end(args);
 }
