@@ -23,7 +23,7 @@ int cp(char *file_to, char *file_from)
 	fr = read(fd, buffer, 1024);
 	if (fr < 0)
 		return (98);
-	while (fr < 0)
+	while (fr > 0)
 	{
 		fw = write(td, buffer, fr);
 		if (fw < 0)
